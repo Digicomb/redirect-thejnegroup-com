@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JNE Security and Technology</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://jnesectech.com/" />
+    <meta http-equiv="refresh" content="0; url=https://jnesectech.com/" />
+    <script>
+      // Old addresses for JNE Security and Technology. Keep paths the new site still answers
+      // (old WordPress pages are redirect stubs there); send everything else to the home page.
+      (function () {
+        var known = ['/services/', '/about-us/', '/contact/', '/privacy-policy/'];
+        var p = location.pathname.toLowerCase();
+        if (p.slice(-1) !== '/') p += '/';
+        var path = known.indexOf(p) !== -1 ? p : '/';
+        location.replace('https://jnesectech.com' + path + location.hash);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>JNE Security and Technology has moved to <a href="https://jnesectech.com/">jnesectech.com</a>.</p>
+  </body>
+</html>
